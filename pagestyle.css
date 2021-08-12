@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f7f8fc;
+    color: #141c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: #2762eb;
+    text-decoration: none;
+}
+
+.login {
+    background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    border: 20px solid #dce7ff;
+    width: 1000px;
+    display: flex;
+
+}
+
+.login__control {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.login__checkbox {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login__checkbox  label {
+    color: #7a7e8c;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.login__checkbox  a {
+    margin-left:auto;
+    width: 150px;
+}
+
+label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+form {
+    border-right: 1px solid #ecf2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #141c2c;
+    border: 2px solid #141c2c;
+    border-radius: 3px;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.btn img {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+.button-ghost {
+    background-color: transparent;
+    border-color: #ecf2ff;
+    color: #141c2c;
+}
+
+input:not([type='checkbox']) {
+    background-color: transparent;
+    border: 2px solid #ecf2ff;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px; 
+}
+
+input:not([type='checkbox']):focus {
+    outline: none;
+    border-color:#dce7ff;
+}
+
+.features {
+    padding: 40px;
+    font-size: 15px;
+}
+
+.features__info {
+    padding-left: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.features__info i {
+    color: #2762eb;
+    position: absolute;
+    top:5px;
+    left:0;
+}
+
+.features__info h3 {
+    margin: 0;
+}
+
+.features__info p {
+    margin:5px 0;
+    line-height: 2;
+    font-size: 14px;
+}
+
+@media(max-width: 768px) {
+    .login {
+        flex-direction: column;
+    }
+    form {
+        border-right:0;
+    }
+}
